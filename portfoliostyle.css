@@ -1,0 +1,174 @@
+body {
+
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 2s;
+   
+}
+@media screen and (max-width:720px)
+        {
+          nav{
+            
+         
+          
+          top: 0;
+          z-index: 1;
+          width: 50px;
+          display: block;
+         
+         
+        }
+       
+       
+       
+
+    }
+    .nav{
+        
+        position:fixed;
+        top:200px;
+        left:0;
+        z-index:1;
+        width:100px;
+    }
+
+#home {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    background: url("1.jpg");
+   
+    
+   
+
+    
+}
+
+
+#about {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    background: url("2.png");
+   
+    position: relative;
+
+}
+
+#contact {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    background: url("3.jpg");
+   
+
+    position: relative;
+
+}
+
+#name {
+    color: white;
+    animation-name: heading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+   
+    position: relative;
+    top: 200px;
+    left: 400px;
+}
+
+h2 {
+    color: white;
+    position: absolute;
+    top: 300px;
+    left: 400px;
+
+}
+
+@keyframes heading {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: rgb(71, 30, 109);
+
+
+    }
+}
+
+h2 {
+    animation-name: heading2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes heading2 {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: rgb(7, 5, 100);
+
+
+    }
+}
+
+.nav {
+
+    color: white;
+    display: inline-block;
+    width: 130px;
+
+
+}
+
+.nav-link,
+.nav-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: rgb(95, 85, 85);
+    color: white;
+    text-decoration: none;
+    border-radius: 60px;
+}
+
+.nav-item {
+
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 25px;
+    margin: 10px;
+
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    position: relative;
+    top: 400px;
+    left: 300px;
+}
+
+img:hover {
+    border: 4px solid navy;
+}
+
+li {
+    list-style-type: none;
+}
