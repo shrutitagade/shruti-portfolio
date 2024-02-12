@@ -3,34 +3,21 @@ body {
     font-size: 18px;
     font-weight: 400;
     transition: all 2s;
-   
-}
-@media screen and (max-width:720px)
-        {
-          nav{
-            
-         
-          
-          top: 0;
-          z-index: 1;
-          width: 50px;
-          display: block;
-         
-         
-        }
-       
-       
-       
 
-    }
-    .nav{
-        
-        position:fixed;
-        top:200px;
-        left:0;
-        z-index:1;
-        width:100px;
-    }
+}
+#cont{
+    z-index: 1;
+}
+
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+     /* Customize as needed */
+    z-index: 1000; /* Ensure the navigation bar stays on top of other content */
+}
+
 
 #home {
 
@@ -40,11 +27,11 @@ body {
     height: 100vh;
 
     background: url("1.jpg");
-   
-    
-   
 
-    
+
+
+
+
 }
 
 
@@ -55,7 +42,7 @@ body {
     height: 100vh;
 
     background: url("2.png");
-   
+
     position: relative;
 
 }
@@ -67,7 +54,7 @@ body {
     height: 100vh;
 
     background: url("3.jpg");
-   
+
 
     position: relative;
 
@@ -78,17 +65,17 @@ body {
     animation-name: heading;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-   
-    position: relative;
+
+    /* position: relative;
     top: 200px;
-    left: 400px;
+    left: 400px; */
 }
 
 h2 {
     color: white;
-    position: absolute;
+    /* position: absolute;
     top: 300px;
-    left: 400px;
+    left: 400px; */
 
 }
 
@@ -122,14 +109,7 @@ h2 {
     }
 }
 
-.nav {
 
-    color: white;
-    display: inline-block;
-    width: 130px;
-
-
-}
 
 .nav-link,
 .nav-link:hover {
@@ -154,15 +134,26 @@ h2 {
 
 }
 
-img {
+#img {
     width: 100px;
     height: 100px;
     border-radius: 50px;
     border: 2px solid blue;
     box-sizing: border-box;
     position: relative;
-    top: 400px;
+   
     left: 300px;
+    z-index: 1;
+}
+#profile
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    /* position: relative;
+    left: 500px; */
 }
 
 img:hover {
