@@ -27,16 +27,29 @@
 
         <br>
 
-        <nav>
+        <nav style="background-color: #002147;">
             <div class="container">
                 <ul class="nav" id="navbar">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link ">About</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link ">Contact</a></li>
-
+                    <li class="nav-item" style="width: 90px;">
+                        <a href="#home" class="nav-link text-white" style="text-decoration: none;">
+                            <i class="fa fa-home" style="font-size: 24px;"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link text-white" style="text-decoration: none;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link text-white" style="text-decoration: none;">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link text-white" style="text-decoration: none;">Contact</a>
+                    </li>
                 </ul>
             </div>
         </nav>
+
+
+        <!-- Bootstrap CSS CDN -->
+
         <br><br><br><Br>
         <div class="container">
             <div class="row">
@@ -46,21 +59,97 @@
 
                 <div class="col-md-6">
                     <h1 id="name">My name is Shruti Tagade</h1><br>
-                    <h2>Front-End Web Developer</h2>
+                    <h2>MERN Stack Developer</h2>
                 </div>
             </div>
         </div><br><br><Br>
+
         <div id="cont" class="container">
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <img src="html.png" id="img">
-                    <img src="css.png" id="img">
-                    <img src="js.png" id="img">
-                    <img src="bootstrap.jpeg" id="img">
-                    <img src="jquery.png" id="img">
+            <div id="imageCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width: 300px;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="html.png" class="d-block w-100" alt="HTML"
+                                style="width: 100px; height: 100px; object-fit: contain;">
+                            <div class="caption-box mt-2">
+                                <p class="caption-text">HTML</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="css.png" class="d-block w-100" alt="CSS"
+                                style="width: 100px; height: 100px; object-fit: contain;">
+                            <div class="caption-box mt-2">
+                                <p class="caption-text">CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="js.png" class="d-block w-100" alt="JavaScript"
+                                style="width: 100px; height: 100px; object-fit: contain;">
+                            <div class="caption-box mt-2">
+                                <p class="caption-text">JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="bootstrap.jpeg" class="d-block w-100" alt="Bootstrap"
+                                style="width: 100px; height: 100px; object-fit: contain;">
+                            <div class="caption-box mt-2">
+                                <p class="caption-text">Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="jquery.png" class="d-block w-100" alt="jQuery"
+                                style="width: 100px; height: 100px; object-fit: contain;">
+                            <div class="caption-box mt-2">
+                                <p class="caption-text">jQuery</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev"
+                    style="width: 15%;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next"
+                    style="width: 25%;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
+
+        <!-- Custom CSS -->
+        <style>
+            .caption-box {
+                background-color: #002147;
+                /* Navy background */
+                padding: 5px 10px;
+                border-radius: 5px;
+                text-align: center;
+            }
+
+            .caption-text {
+                color: #fff;
+                /* White text */
+                font-size: 14px;
+                margin: 0;
+            }
+        </style>
+
+        <!-- Bootstrap CSS CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Bundle JS with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
     </section>
     <section id="about">
@@ -70,8 +159,11 @@
                     <br><br><Br>
                     <div style="line-height:40px;font-weight:500;color:rgb(112, 32, 111)">My name is Shruti Tagade ,
                         <br>studying in
-                        Government college of engineering , amravati.<br> I am in 3 <sup>rd</sup> year of IT.<br>
-                        My skills include HTML5, CSS3, Bootstrap 5, jQuery, JavaScript, and React.js.<br><br>
+                        Government college of engineering , amravati.<br> I am in final
+                        <!-- <sup>rd</sup> -->
+                        year of IT.<br>
+                        My skills include HTML5, CSS3, Bootstrap 5, jQuery, JavaScript, React.js,MongoDb,,Express and
+                        NodeJs<br><br>
                     </div>
                     <h1 style="color:darkblue">Front End Web Developer</h1><br>
                     <h5 style="color: rgb(53, 7, 146)">City : Amravati</h5><br>
@@ -81,30 +173,79 @@
         </div>
     </section>
 
+    <section id="projects" class="py-5 bg-light">
+        <br><br><Br>
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary">Projects</h2>
+            <div class="row">
+                <!-- Project 1: Weather Forecasting App -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-secondary">Weather Forecasting App (React)</h5>
+                            <p class="card-text flex-grow-1">
+                                Developed a weather forecasting application using React.js and a weather API to provide
+                                accurate and real-time weather information.
+                            </p>
+                            <p class="card-text">
+                                <strong>GitHub Repository:</strong>
+                                <a href="https://shrutitagade.github.io/weather-forecasting-app/"
+                                    target="_blank">https://shrutitagade.github.io/weatherforecasting-app/</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: ToDo App -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-secondary">To-Do App (MERN Stack)</h5>
+                            <p class="card-text flex-grow-1">
+                                Developed a full-stack To-Do List application using the MERN stack (MongoDB, Express.js,
+                                React, Node.js) with Redux for state management. The app enables users to add, edit,
+                                delete, and manage tasks efficiently. The user interface is built with React, while
+                                backend APIs are created using Express.js and Node.js, with MongoDB as the database.
+                            </p>
+                            <p class="card-text">
+                                <strong>Live Link:</strong>
+                                <a href="http://task-list-mern-app.netlify.app/"
+                                    target="_blank">http://task-list-mern-app.netlify.app/</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap CSS -->
 
     <section id="contact">
         <div class="container">
             <div class="row">
 
                 <div class="col-md-6 mx-auto">
-                    <br><br><br>
+                    <br><br><br><br>
                     <h5> Email : shrutitagade507@gmail.com</h5><br><br>
                     <div>
                         <a href="https://www.linkedin.com/in/shruti-tagade-4a6668253" target="blank"
                             style="text-decoration:none;color:white"><i class="fa fa-linkedin-square" aria-hidden="true"
                                 style="float:left;margin-right:10px;margin-top:4px"></i>
-                            <li>Linkedin</li><br>
+                            <li class="social-link">Linkedin</li><br>
                         </a>
 
                         <a href="https://instagram.com/tagadeshruti?igshid=zDdkNTZiNTM=" target="blank"
                             style="text-decoration:none;color:white"><i class="fa fa-instagram" aria-hidden="true"
                                 style="float:left;margin-right:10px;margin-top:4px"></i>
-                            <li>Instagram</li><br>
+                            <li class="social-link">Instagram</li><br>
                         </a>
                         <a href="https://github.com/shrutiTaga" target="blank"
                             style="text-decoration:none;color:white"><i class="fa fa-github" aria-hidden="true"
                                 style="float:left;margin-right:10px;margin-top:4px"></i>
-                            <li>GitHub</li><br><br>
+                            <li class="social-link">GitHub</li><br><br>
                         </a>
                     </div>
 

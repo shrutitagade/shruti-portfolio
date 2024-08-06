@@ -5,19 +5,27 @@ body {
     transition: all 2s;
 
 }
-#cont{
+
+#cont {
     z-index: 1;
 }
 
+.social-link {
+    font-weight: 700;
+}
 
 #navbar {
     position: fixed;
     top: 0;
     width: 100%;
-     /* Customize as needed */
-    z-index: 1000; /* Ensure the navigation bar stays on top of other content */
+    /* Customize as needed */
+    z-index: 1000;
+    /* Ensure the navigation bar stays on top of other content */
 }
 
+#projects {
+    height: 100vh;
+}
 
 #home {
 
@@ -42,6 +50,20 @@ body {
     height: 100vh;
 
     background: url("2.png");
+
+    position: relative;
+
+}
+
+
+
+#projects {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    background: url("4.jpg");
 
     position: relative;
 
@@ -133,9 +155,11 @@ h2 {
     margin: 10px;
 
 }
-#profile:hover{
+
+#profile:hover {
     border: 3px solid navy;
 }
+
 #img {
     width: 100px;
     height: 100px;
@@ -143,12 +167,12 @@ h2 {
     border: 2px solid blue;
     box-sizing: border-box;
     /* position: relative; */
-   
+
     /* left: 300px;
     z-index: 1; */
 }
-#profile
-{
+
+#profile {
     width: 200px;
     height: 200px;
     border-radius: 100px;
